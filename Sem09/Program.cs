@@ -20,6 +20,16 @@ namespace Sem09
             
             double r2 = a.AreaCirculo(9);
             Console.WriteLine("El area del circulo es: " + r2);
+
+            Perimetros p = new Perimetros();
+
+            double r, r3=0;
+
+            Console.WriteLine("ingresa el radio: ");
+            r = double.Parse(Console.ReadLine());
+
+            p.PerimetroDelCircule(r, ref r3);
+            Console.WriteLine("R3: " + r3);
         }
     }
 }
